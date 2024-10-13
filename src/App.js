@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import Header from './Header';
+import React, { useState } from 'react';
+import AutoCard from './AutoCard';
 import './App.css';
 
 function App() {
+  const [contador, setContador] = useState(0);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <h2>Contador: {contador}</h2>
+      <button onClick={() => setContador(contador + 1)}>Incrementar</button>
+
+      <AutoCard
+        marca="Toyota"
+        modelo="Corolla"
+        anno={2021}
+        color="Azul"
+      />
+      <AutoCard
+        marca="Ford"
+        modelo="Mustang"
+        anno={2020}
+        color="Rojo"
+      />
     </div>
   );
 }
