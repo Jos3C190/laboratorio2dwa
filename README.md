@@ -44,7 +44,7 @@ Sigue estos pasos para ejecutar el proyecto localmente en tu entorno de desarrol
 #### Clona el Repositorio
 - Clona el proyecto a tu máquina local. Abre una terminal y ejecuta:
 ``` bash
-git clone [URL-del-repositorio]
+git clone https://github.com/Jos3C190/laboratorio2dwa.git
 ```
 - Cambia al directorio del proyecto:
 ``` bash
@@ -124,3 +124,7 @@ function App() {
 Aquí, el componente `App` pasa datos a `CardAutomovil` a través de props, demostrando el flujo de datos unidireccional.
 
 ## Reflexión
+
+Al trabajar con esta guía de React, descubrí cómo React facilita la creación de interfaces interactivas. Lo que más me gustó fue aprender a descomponer la UI en pequeños componentes reutilizables, lo que hace que el proyecto se sienta más organizado y fácil de manejar.
+
+También me sorprendió lo intuitivo que resulta JSX, ya que permite combinar JavaScript y "HTML" en un solo lugar. Aprender sobre el manejo del estado fue interesante, pude ver cómo los datos pueden cambiar dinámicamente y actualizar la interfaz sin esfuerzo. Además, entendí la importancia de las props para enviar información entre componentes, lo que mantiene el flujo de datos ordenado.
